@@ -1,324 +1,1129 @@
 <!DOCTYPE html>
-<!--[if IE 8]>
-<html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]>
-<html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-    <title>Deepak - Java Developer</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hi, I am Deepak. I am Java Developer based in UK.">
-    <meta name="keywords"
-          content="Deepak Sunanda Prabhakar, Deepak, Java Developer, Spring, Hibernate, Spring Boot, Spring Data JPA, Thymeleaf">
-    <meta name="author" content="Deepak Sunanda Prabhakar">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
-          rel='stylesheet' type='text/css'>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deepak S P — Senior Software Engineer | Go, Java, Microservices | Berlin</title>
+<meta name="description" content="Senior Software Engineer with 10+ years of experience in Go, Java, Spring Boot, and microservices architecture. Currently building scalable systems at Trendyol Group in Berlin. Open source contributor and tech writer.">
+<meta name="keywords" content="Deepak S P, Senior Software Engineer, Go Developer, Java, Spring Boot, Microservices, Backend Engineer, Berlin, Trendyol, LinkedIn, GitHub">
+<meta name="author" content="Deepak S P">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://spdeepak.github.io/">
 
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Deepak S P — Senior Software Engineer">
+<meta property="og:description" content="Senior Software Engineer with 10+ years of experience in Go, Java, Spring Boot, and microservices architecture. Building scalable systems at Trendyol Group, Berlin.">
+<meta property="og:url" content="https://spdeepak.github.io/">
+<meta property="og:site_name" content="Deepak S P — Portfolio">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/12873468">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Deepak S P — Senior Software Engineer">
+<meta name="twitter:description" content="Senior Software Engineer with 10+ years of experience in Go, Java, Spring Boot, and microservices architecture. Building scalable systems at Trendyol Group, Berlin.">
+<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/12873468">
+<meta name="twitter:creator" content="@iamdeepaksp">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Deepak S P",
+  "jobTitle": "Senior Software Developer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Trendyol Group"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Berlin",
+    "addressCountry": "DE"
+  },
+  "url": "https://spdeepak.github.io/",
+  "sameAs": [
+    "https://www.linkedin.com/in/spdeepak/",
+    "https://github.com/spdeepak",
+    "https://twitter.com/iamdeepaksp"
+  ],
+  "knowsAbout": ["Go", "Java", "Spring Boot", "Microservices", "Kubernetes", "Kafka", "PostgreSQL", "Software Architecture"],
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "University of Staffordshire"
+  }
+}
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --border: rgba(255,255,255,0.06);
+    --text: #f0f0f5;
+    --text-dim: #8b8ba3;
+    --accent: #6c63ff;
+    --accent-2: #a78bfa;
+    --accent-glow: rgba(108, 99, 255, 0.15);
+    --gradient-1: #6c63ff;
+    --gradient-2: #a78bfa;
+    --gradient-3: #f472b6;
+    --success: #34d399;
+    --orange: #fb923c;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ── SCROLL PROGRESS ── */
+  .progress-track {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--surface);
+    z-index: 1000;
+  }
+  .progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2), var(--gradient-3));
+    transition: width 0.05s linear;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 999;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(24px) saturate(1.6);
+    -webkit-backdrop-filter: blur(24px) saturate(1.6);
+    background: rgba(10, 10, 15, 0.7);
+    border-bottom: 1px solid var(--border);
+    transition: padding 0.3s;
+  }
+  nav.compact { padding: 0.6rem 2rem; }
+  .nav-name {
+    font-weight: 800;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+  }
+  .nav-links { display: flex; gap: 1.5rem; }
+  .nav-links a {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 500;
+    transition: color 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .nav-links a:hover { color: var(--accent-2); }
+  .nav-download {
+    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.3rem;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+  }
+  .nav-download:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(108, 99, 255, 0.3);
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-glow {
+    position: absolute;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(108,99,255,0.12), transparent 70%);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: glowPulse 5s ease-in-out infinite alternate;
+  }
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1rem;
+    background: var(--accent-glow);
+    border: 1px solid rgba(108,99,255,0.2);
+    border-radius: 100px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent-2);
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.7s 0.2s forwards;
+  }
+  .hero-tag::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--success);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  .hero h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s 0.35s forwards;
+  }
+  .hero h1 span {
+    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2), var(--gradient-3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero-subtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    color: var(--text-dim);
+    font-weight: 400;
+    max-width: 600px;
+    margin-bottom: 0.75rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s 0.5s forwards;
+  }
+  .hero-location {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    margin-bottom: 2.5rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s 0.6s forwards;
+  }
+  .hero-location span { color: var(--accent-2); }
+  .hero-links {
+    display: flex;
+    gap: 1rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s 0.7s forwards;
+  }
+  .hero-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 100px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .hero-link.primary {
+    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
+    color: #fff;
+  }
+  .hero-link.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(108, 99, 255, 0.35);
+  }
+  .hero-link.secondary {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  .hero-link.secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+
+  /* ── SCROLL INDICATOR ── */
+  .scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 1s forwards;
+  }
+  .scroll-indicator span {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+  .scroll-mouse {
+    width: 22px; height: 34px;
+    border: 2px solid var(--text-dim);
+    border-radius: 12px;
+    position: relative;
+  }
+  .scroll-mouse::after {
+    content: '';
+    position: absolute;
+    top: 6px; left: 50%;
+    transform: translateX(-50%);
+    width: 3px; height: 8px;
+    background: var(--accent-2);
+    border-radius: 3px;
+    animation: scrollDot 2s infinite;
+  }
+
+  /* ── SECTION COMMON ── */
+  section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+  }
+  .section-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent-2);
+    margin-bottom: 0.75rem;
+  }
+  .section-title {
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+  }
+  .section-desc {
+    color: var(--text-dim);
+    font-size: 1.05rem;
+    max-width: 580px;
+    line-height: 1.7;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+    margin: 0 auto;
+  }
+
+  /* ── REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── ABOUT ── */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    margin-top: 3rem;
+  }
+  .about-text p {
+    color: var(--text-dim);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+  .about-text strong { color: var(--text); }
+  .about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .stat-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  .stat-box:hover {
+    transform: translateY(-3px);
+    border-color: rgba(108,99,255,0.2);
+  }
+  .stat-num {
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+  }
+  .stat-label {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    margin-top: 0.25rem;
+  }
+
+  /* ── EXPERIENCE ── */
+  .timeline {
+    margin-top: 3rem;
+    position: relative;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0; bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), var(--gradient-3), transparent);
+  }
+  .timeline-item {
+    padding-left: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 6px;
+    width: 12px; height: 12px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(108,99,255,0.4);
+  }
+  .timeline-date {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent-2);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.4rem;
+  }
+  .timeline-role {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+  }
+  .timeline-company {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    margin-bottom: 0.75rem;
+  }
+  .timeline-company a {
+    color: var(--accent-2);
+    text-decoration: none;
+  }
+  .timeline-company a:hover { text-decoration: underline; }
+  .timeline-desc {
+    color: var(--text-dim);
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+  .timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+  }
+  .timeline-tag {
+    padding: 0.2rem 0.65rem;
+    background: var(--accent-glow);
+    border: 1px solid rgba(108,99,255,0.15);
+    border-radius: 100px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--accent-2);
+  }
+
+  /* ── SKILLS ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 3rem;
+  }
+  .skill-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.75rem;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  .skill-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(108,99,255,0.2);
+  }
+  .skill-icon {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .skill-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  .skill-item {
+    padding: 0.2rem 0.6rem;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ── PROJECTS ── */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 3rem;
+  }
+  .project-card {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: transform 0.3s, border-color 0.3s;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+  }
+  .project-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gradient-1), var(--gradient-3));
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .project-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(108,99,255,0.15);
+  }
+  .project-card:hover::before { opacity: 1; }
+  .project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .project-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .project-lang {
+    padding: 0.15rem 0.5rem;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.68rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-dim);
+  }
+  .project-desc {
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+  }
+  .project-footer {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    align-items: center;
+  }
+  .project-footer span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .project-footer span:last-child {
+    color: var(--accent-2);
+    font-weight: 600;
+    margin-left: auto;
+  }
+
+  /* ── PUBLICATIONS ── */
+  .pub-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 2rem;
+    transition: transform 0.3s, border-color 0.3s;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  .pub-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(108,99,255,0.15);
+  }
+  .pub-icon {
+    width: 60px; height: 60px;
+    background: var(--accent-glow);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+  .pub-content h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+  .pub-content p {
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+  .pub-content a {
+    color: var(--accent-2);
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+  .pub-content a:hover { text-decoration: underline; }
+
+  /* ── EDUCATION ── */
+  .edu-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    transition: transform 0.3s;
+  }
+  .edu-card:hover { transform: translateY(-2px); }
+  .edu-icon {
+    width: 56px; height: 56px;
+    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+  .edu-degree { font-size: 1.1rem; font-weight: 700; }
+  .edu-school { color: var(--text-dim); font-size: 0.9rem; }
+
+  /* ── CONTACT ── */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  .contact-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(108,99,255,0.2);
+  }
+  .contact-card .icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
+  .contact-card .label {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.15rem;
+  }
+  .contact-card .value {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent-2);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 0.82rem;
+  }
+  footer a {
+    color: var(--accent-2);
+    text-decoration: none;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  @keyframes glowPulse {
+    from { opacity: 0.6; transform: translate(-50%, -50%) scale(0.9); }
+    to { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+  }
+  @keyframes scrollDot {
+    0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(10px); }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 800px) {
+    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .skills-grid { grid-template-columns: 1fr 1fr; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr 1fr; }
+    .nav-links { display: none; }
+    .pub-card { flex-direction: column; text-align: center; }
+  }
+  @media (max-width: 500px) {
+    .skills-grid { grid-template-columns: 1fr; }
+    .about-stats { grid-template-columns: 1fr 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .hero-links { flex-direction: column; }
+  }
+</style>
 </head>
-
 <body>
-<div class="wrapper">
-    <div class="sidebar-wrapper">
-        <div class="profile-container">
-            <img class="profile" src="assets/images/profile.png" alt=""/>
-            <h1 class="name">Deepak</h1>
-            <h3 class="tagline">Backend Engineer</h3>
-        </div><!--//profile-container-->
 
-        <div class="contact-container container-block">
-            <ul class="list-unstyled contact-list">
-                <li class="email"><i class="fa fa-envelope"></i><a href="mailto: spdeepak@outlook.com">spdeepak@outlook.com</a>
-                </li>
-                <!--<li class="phone"><i class="fa fa-phone"></i><a href="tel:###</a></li> -->
-                <!--<li class="website"><i class="fa fa-globe"></i><a href="" target="_blank"></a></li> -->
-                <li class="linkedin">
-                    <i class="fa fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/spdeepak/" target="_blank">linkedin.com/in/spdeepak</a>
-                </li>
-                <li class="github">
-                    <i class="fa fa-github"></i>
-                    <a href="https://github.com/spdeepak" target="_blank">github.com/spdeepak</a>
-                </li>
-                <li class="twitter">
-                    <i class="fa fa-twitter"></i>
-                    <a href="https://twitter.com/iamdeepaksp" target="_blank">@iamdeepaksp</a>
-                </li>
-                <li class="skype">
-                    <i class="fa fa-skype fa-1" aria-hidden="true"></i>
-                    <a href="skype:deepak.sp17?chat" target="_blank">deepak.sp17</a>
-                </li>
-                <!--<p>More skype href options http://stackoverflow.com/a/2841708/7801553</p> -->
-            </ul>
-        </div><!--//contact-container-->
-        <div class="education-container container-block">
-            <h2 class="container-block-title">Education</h2>
-            <div class="item">
-                <h4 class="degree">MSc in Computer Science</h4>
-                <h5 class="meta">Staffordshire University</h5>
-                <div class="time">2014 - 2017</div>
-            </div><!--//item-->
-            <div class="item">
-                <h4 class="degree">BE in Computer Science</h4>
-                <h5 class="meta">Visvesvaraya Technological University</h5>
-                <div class="time">2008 - 2012</div>
-            </div><!--//item-->
-        </div><!--//education-container-->
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
 
-        <div class="languages-container container-block">
-            <h2 class="container-block-title">Languages</h2>
-            <ul class="list-unstyled interests-list">
-                <li>English <span class="lang-desc">(Professional)</span></li>
-                <li>Kannada <span class="lang-desc">(Native)</span></li>
-                <li>Hindi <span class="lang-desc">(Professional)</span></li>
-                <li>Telugu <span class="lang-desc">(Professional)</span></li>
-            </ul>
-        </div><!--//interests-->
+<nav id="nav">
+  <div class="nav-name">Deepak S P</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="nav-download">Let's Talk</a>
+</nav>
 
-        <div class="interests-container container-block">
-            <h2 class="container-block-title">Interests</h2>
-            <ul class="list-unstyled interests-list">
-                <li>Travelling</li>
-                <li>Cooking</li>
-            </ul>
-        </div><!--//interests-->
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-tag">Open to Opportunities</div>
+  <h1>Deepak <span>S P</span></h1>
+  <p class="hero-subtitle">Senior Software Engineer crafting scalable systems at the intersection of backend architecture and cloud-native design.</p>
+  <p class="hero-location">📍 <span>Berlin, Germany</span> &nbsp;·&nbsp; Trendyol Group</p>
+  <div class="hero-links">
+    <a href="#contact" class="hero-link primary">Get In Touch</a>
+    <a href="https://github.com/spdeepak" target="_blank" class="hero-link secondary">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/spdeepak/" target="_blank" class="hero-link secondary">LinkedIn ↗</a>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"></div>
+    <span>Scroll</span>
+  </div>
+</section>
 
-    </div><!--//sidebar-wrapper-->
+<div class="divider"></div>
 
-    <div class="main-wrapper">
+<!-- ABOUT -->
+<section id="about">
+  <div class="reveal">
+    <p class="section-label">About</p>
+    <h2 class="section-title">Building systems that scale.</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal" style="transition-delay: 0.1s;">
+      <p>With <strong>over a decade of experience</strong> in software development, I am a senior software engineer specializing in building robust, scalable backend systems and cloud-native architectures.</p>
+      <p>Currently at <strong>Trendyol Group</strong> — Turkey's leading e-commerce platform — I design and implement microservices that power millions of transactions daily across multiple geographies.</p>
+      <p>My passion lies in solving complex distributed systems problems, from circuit breaker patterns for translation services to high-performance HTTP caching layers. I believe great engineering is about <strong>embracing complexity</strong> and turning it into elegant, maintainable solutions.</p>
+    </div>
+    <div class="about-stats reveal" style="transition-delay: 0.2s;">
+      <div class="stat-box">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">37</div>
+        <div class="stat-label">Open Source Repos</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">1K+</div>
+        <div class="stat-label">LinkedIn Followers</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">Go</div>
+        <div class="stat-label">Primary Language</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <section class="section summary-section">
-            <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
-            <div class="summary">
-                <p>I have experience building software solutions that are highly performant, scalable and maintainable with a strong understanding of developing and maintaining microservices using Java, Kotlin, Spring Boot.</p>
-            </div><!--//summary-->
-        </section><!--//section-->
+<div class="divider"></div>
 
-        <section class="section experiences-section">
-            <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="reveal">
+    <p class="section-label">Experience</p>
+    <h2 class="section-title">Where I've made an impact.</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-date">Feb 2022 — Present · 4 yrs 5 mos</div>
+      <div class="timeline-role">Senior Software Developer</div>
+      <div class="timeline-company"><a href="https://www.trendyol.com" target="_blank">Trendyol Group</a> · Berlin, Germany</div>
+      <p class="timeline-desc">Led the design and implementation of a large-scale internationalisation platform integrating Google Translate API, Azure AI Services, and Google Cloud AutoML. Drove architectural decisions and contributed to RFC processes for complex distributed system designs. Built observability pipelines with Elasticsearch, Kibana, and BigQuery. Led migration from Couchbase to PostgreSQL, optimising schema design and reducing infrastructure costs. Mentored engineers and established best practices for production-grade backend systems.</p>
+      <div class="timeline-tags">
+        <span class="timeline-tag">Go</span>
+        <span class="timeline-tag">Java</span>
+        <span class="timeline-tag">Couchbase</span>
+        <span class="timeline-tag">Microservices</span>
+        <span class="timeline-tag">Kafka</span>
+        <span class="timeline-tag">PostgreSQL</span>
+        <span class="timeline-tag">Elasticsearch</span>
+        <span class="timeline-tag">BigQuery</span>
+      </div>
+    </div>
+    <div class="timeline-item reveal" style="transition-delay: 0.1s;">
+      <div class="timeline-date">Aug 2018 — Jan 2022 · 3 yrs 6 mos</div>
+      <div class="timeline-role">Software Developer</div>
+      <div class="timeline-company"><a href="https://www.akelius.de" target="_blank">Akelius GmbH</a> · Berlin, Germany</div>
+      <p class="timeline-desc">Designed and developed synchronous and asynchronous libraries with microservice architecture using REST APIs and messaging queues. Implemented gateway pattern across existing and new microservices. Designed database models for complex systems using both SQL and NoSQL databases. Built an optimal asynchronous solution to reduce image upload time significantly.</p>
+      <div class="timeline-tags">
+        <span class="timeline-tag">Java</span>
+        <span class="timeline-tag">Spring Boot</span>
+        <span class="timeline-tag">REST APIs</span>
+        <span class="timeline-tag">Microservices</span>
+        <span class="timeline-tag">SQL</span>
+        <span class="timeline-tag">NoSQL</span>
+      </div>
+    </div>
+    <div class="timeline-item reveal" style="transition-delay: 0.2s;">
+      <div class="timeline-date">Jun 2017 — Jul 2018 · 1 yr 2 mos</div>
+      <div class="timeline-role">Backend Engineer</div>
+      <div class="timeline-company">LEVERTON · London, UK & Berlin, Germany</div>
+      <p class="timeline-desc">Built data transformation rules to manipulate and generate data at scale. Integrated statistical and rule-based methods for information extraction from complex documents.</p>
+      <div class="timeline-tags">
+        <span class="timeline-tag">Backend</span>
+        <span class="timeline-tag">Data Transformation</span>
+        <span class="timeline-tag">Information Extraction</span>
+      </div>
+    </div>
+    <div class="timeline-item reveal" style="transition-delay: 0.3s;">
+      <div class="timeline-date">Sep 2015 — Aug 2016 · 1 yr</div>
+      <div class="timeline-role">Backend Developer</div>
+      <div class="timeline-company">Apak Group Limited · Bristol, United Kingdom</div>
+      <p class="timeline-desc">Developed the Wholesale Finance System (WFS). Built a new invoice generation system using DOM4J and Docx4J. Improved search performance across the platform.</p>
+      <div class="timeline-tags">
+        <span class="timeline-tag">Java</span>
+        <span class="timeline-tag">DOM4J</span>
+        <span class="timeline-tag">Docx4J</span>
+        <span class="timeline-tag">Finance Systems</span>
+      </div>
+    </div>
+    <div class="timeline-item reveal" style="transition-delay: 0.4s;">
+      <div class="timeline-date">Mar 2013 — Aug 2014 · 1 yr 6 mos</div>
+      <div class="timeline-role">Web Developer</div>
+      <div class="timeline-company">Test Yantra Software Solutions · Bengaluru, India</div>
+      <p class="timeline-desc">Full-stack web development across multiple client projects. Built and maintained web applications and contributed to delivery of enterprise solutions.</p>
+      <div class="timeline-tags">
+        <span class="timeline-tag">Web Development</span>
+        <span class="timeline-tag">Full Stack</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div class="item">
-                <div class="meta">
-                    <div class="upper-row">
-                        <h3 class="job-title">Senior Developer</h3>
-                        <div class="time">January 2022 - Present</div>
-                    </div><!--//upper-row-->
-                    <div class="company">Trendyol Group, Berlin</div>
-                </div><!--//meta-->
-                <div class="details">
-                    <ul style="padding: 0;">
-                        <!--
-                        <li>Design & Develop new synchronous and asynchronous libraries with micro-service architecture using Rest APIs & messaging queues to perform tasks such as CRUD, email, document, and image storage</li>
-                        <li>Implement microservices architecture gateway pattern on existing and new micro-services</li>
-                        <li>Design database models for complex systems using both SQL & NO-SQL databases</li>
-                        <li>Implemented an optimal out of the box asynchronous solution to reduce the time taken to upload images</li>
-                        -->
-                    </ul>
-                </div><!--//details-->
-            </div><!--//item-->
-            
-            <div class="item">
-                <div class="meta">
-                    <div class="upper-row">
-                        <h3 class="job-title">Developer</h3>
-                        <div class="time">August 2018 - January 2022</div>
-                    </div><!--//upper-row-->
-                    <div class="company">Akelius GmbH, Berlin</div>
-                </div><!--//meta-->
-                <div class="details">
-                    <ul style="padding: 0;">
-                        <li>Design & Develop new synchronous and asynchronous libraries with micro-service architecture using Rest APIs & messaging queues to perform tasks such as CRUD, email, document, and image storage</li>
-                        <li>Implement microservices architecture gateway pattern on existing and new micro-services</li>
-                        <li>Design database models for complex systems using both SQL & NO-SQL databases</li>
-                        <li>Implemented an optimal out of the box asynchronous solution to reduce the time taken to upload images</li>
-                    </ul>
-                </div><!--//details-->
-            </div><!--//item-->
+<div class="divider"></div>
 
-            <div class="item">
-                <div class="meta">
-                    <div class="upper-row">
-                        <h3 class="job-title">Backend Engineer</h3>
-                        <div class="time">June 2017 - July 2018</div>
-                    </div><!--//upper-row-->
-                    <div class="company">Leverton, London</div>
-                </div><!--//meta-->
-                <div class="details">
-                    <ul style="padding: 0;">
-                        <li>Write rules using Groovy/Java to manipulate data</li>
-                        <li>Integration of statistical and rule based methods for information extraction</li>
-                        <li>External API Integration</li>
-                    </ul>
-                </div><!--//details-->
-            </div><!--//item-->
+<!-- SKILLS -->
+<section id="skills">
+  <div class="reveal">
+    <p class="section-label">Technical Skills</p>
+    <h2 class="section-title">My toolkit.</h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal" style="transition-delay: 0s;">
+      <div class="skill-icon">⚡</div>
+      <h3>Languages & Runtimes</h3>
+      <div class="skill-items">
+        <span class="skill-item">Go</span>
+        <span class="skill-item">Java</span>
+        <span class="skill-item">Python</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay: 0.08s;">
+      <div class="skill-icon">☁️</div>
+      <h3>Infrastructure & Cloud</h3>
+      <div class="skill-items">
+        <span class="skill-item">Kubernetes</span>
+        <span class="skill-item">Docker</span>
+        <span class="skill-item">AWS</span>
+        <span class="skill-item">GCP</span>
+        <span class="skill-item">CI/CD</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay: 0.16s;">
+      <div class="skill-icon">🔧</div>
+      <h3>Architecture & Patterns</h3>
+      <div class="skill-items">
+        <span class="skill-item">Microservices</span>
+        <span class="skill-item">REST</span>
+        <span class="skill-item">Event-Driven</span>
+        <span class="skill-item">CQRS</span>
+        <span class="skill-item">Circuit Breaker</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay: 0.24s;">
+      <div class="skill-icon">🗄️</div>
+      <h3>Data & Storage</h3>
+      <div class="skill-items">
+        <span class="skill-item">PostgreSQL</span>
+        <span class="skill-item">Redis</span>
+        <span class="skill-item">Kafka</span>
+        <span class="skill-item">Elasticsearch</span>
+        <span class="skill-item">MongoDB</span>
+        <span class="skill-item">Couchbase</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay: 0.32s;">
+      <div class="skill-icon">🛠️</div>
+      <h3>Developer Tools</h3>
+      <div class="skill-items">
+        <span class="skill-item">Git</span>
+        <span class="skill-item">GitHub Actions</span>
+        <span class="skill-item">Prometheus</span>
+        <span class="skill-item">Grafana</span>
+        <span class="skill-item">Datadog</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay: 0.4s;">
+      <div class="skill-icon">🤝</div>
+      <h3>Practices & Methods</h3>
+      <div class="skill-items">
+        <span class="skill-item">Agile / Scrum</span>
+        <span class="skill-item">Code Review</span>
+        <span class="skill-item">TDD</span>
+        <span class="skill-item">Pair Programming</span>
+        <span class="skill-item">Mentoring</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div class="item">
-                <div class="meta">
-                    <div class="upper-row">
-                        <h3 class="job-title">Software Developer - Intern</h3>
-                        <div class="time">Sep 2015 - Aug 2016</div>
-                    </div><!--//upper-row-->
-                    <div class="company">Sword Apak, Bristol, United Kingdom</div>
-                </div><!--//meta-->
-                <div class="details">
-                    <ul style="padding: 0;">
-                        <li>Worked on the existing Wholesale Finance System(WFS) using Java, Spring, Hibernate through
-                            my placement year
-                        </li>
-                        <li>Work collaboratively with other teams to understand requirements and incorporate them into
-                            the software
-                        </li>
-                        <li>Developed a new Invoice generating system for WFS using DOM4J and Docx4J</li>
-                        <li>Used JIRA for tracking the workflow of the issues & bugs and fixing them which were
-                            occurring in the systems of LIVE customers
-                        </li>
-                        <li>Worked with GIT & SVN for version control</li>
-                        <li>Used Jenkins for Builds</li>
-                        <li>Improved WFS Search Performance</li>
-                    </ul>
-                </div><!--//details-->
-            </div><!--//item-->
+<div class="divider"></div>
 
-            <div class="item">
-                <div class="meta">
-                    <div class="upper-row">
-                        <h3 class="job-title">Web Developer</h3>
-                        <div class="time">Mar 2013 - Aug 2014</div>
-                    </div><!--//upper-row-->
-                    <div class="company">Test Yantra Software Solutions, Bengaluru, India</div>
-                </div><!--//meta-->
-                <div class="details">
-                    <ul style="padding: 0;">
-                        <li>Define application objectives</li>
-                        <li>Use SCRUM methodology for building applications</li>
-                        <li>Integrating APIs to web applications.</li>
-                    </ul>
-                </div><!--//details-->
-            </div><!--//item-->
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="reveal">
+    <p class="section-label">Open Source</p>
+    <h2 class="section-title">Projects I've built.</h2>
+    <p class="section-desc">Open-source libraries designed to solve real-world engineering problems with elegant, minimal APIs.</p>
+  </div>
+  <div class="projects-grid">
+    <a href="https://github.com/spdeepak/Condigo" target="_blank" class="project-card reveal" style="transition-delay: 0s;">
+      <div class="project-header">
+        <div class="project-name">📦 Condigo</div>
+        <span class="project-lang">Go</span>
+      </div>
+      <p class="project-desc">A lightweight Go library providing a fluent interface for conditional statements. Define complex logic flows in a readable, linear fashion — replacing messy if-else chains.</p>
+      <div class="project-footer">
+        <span>⭐ Featured</span>
+        <span>View on GitHub →</span>
+      </div>
+    </a>
+    <a href="https://github.com/spdeepak/Aegis" target="_blank" class="project-card reveal" style="transition-delay: 0.1s;">
+      <div class="project-header">
+        <div class="project-name">🛡️ Aegis</div>
+        <span class="project-lang">Go</span>
+      </div>
+      <p class="project-desc">A production-ready JWT authentication server built with Go. Handles token generation, validation, and refresh with clean architecture and configurable middleware.</p>
+      <div class="project-footer">
+        <span>⭐ 1</span>
+        <span>View on GitHub →</span>
+      </div>
+    </a>
+    <a href="https://github.com/spdeepak/flowtracker" target="_blank" class="project-card reveal" style="transition-delay: 0.2s;">
+      <div class="project-header">
+        <div class="project-name">📡 FlowTracker</div>
+        <span class="project-lang">Go</span>
+      </div>
+      <p class="project-desc">A lightweight, thread-safe observability library for Go microservices. Tracks the lifecycle of API requests as they flow through your application, capturing execution time and context.</p>
+      <div class="project-footer">
+        <span>⭐ 1</span>
+        <span>View on GitHub →</span>
+      </div>
+    </a>
+    <a href="https://github.com/spdeepak/capsulecache" target="_blank" class="project-card reveal" style="transition-delay: 0.3s;">
+      <div class="project-header">
+        <div class="project-name">💾 CapsuleCache</div>
+        <span class="project-lang">Go</span>
+      </div>
+      <p class="project-desc">Go HTTP output cache middleware with hard memory quotas. Guarantees stability in Kubernetes and containers by preventing OOM errors. Supports TTL, LRU, and Stale-While-Revalidate.</p>
+      <div class="project-footer">
+        <span>📦 Open Source</span>
+        <span>View on GitHub →</span>
+      </div>
+    </a>
+  </div>
+</section>
 
-            <div class="item">
-                <div class="meta">
-                    <div class="upper-row">
-                        <h3 class="job-title">Project Intern</h3>
-                        <div class="time">Nov 2012 - Mar 2013</div>
-                    </div><!--//upper-row-->
-                    <div class="company">Aris Global, Bengaluru, India</div>
-                </div><!--//meta-->
-                <div class="details">
-                    <ul style="padding: 0;">
-                        <li>Develop, Implement & Co-ordinate effective learning systems</li>
-                        <li>Team up with software developers, technical writers, interface designers, and Project
-                            managers to make the best e-learning courses.
-                        </li>
-                    </ul>
-                </div><!--//details-->
-            </div><!--//item-->
+<div class="divider"></div>
 
-        </section><!--//section-->
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="reveal">
+    <p class="section-label">Publications</p>
+    <h2 class="section-title">Writing & Thought Leadership.</h2>
+  </div>
+  <div class="pub-card reveal" style="transition-delay: 0.1s;">
+    <div class="pub-icon">📝</div>
+    <div class="pub-content">
+      <h3>Circuit Breaker: Taming Translation Limits at Trendyol</h3>
+      <p>A deep dive into how we implemented the circuit breaker design pattern to optimize translation services — intelligently limiting API calls to manage service quotas and prevent client overuse.</p>
+      <a href="https://medium.com/trendyol-tech/circuit-breaker-taming-translation-limits-at-trendyol-907fa5fbfa32" target="_blank">Read on Medium →</a>
+    </div>
+  </div>
+</section>
 
+<div class="divider"></div>
 
-        <section class="section projects-section">
-            <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
-            <div class="intro">
-                <p>List of side projects or open source libraries I have worked on</p>
-            </div><!--//intro-->
-            <div class="item">
-                <span class="project-title"><a href="https://github.com/spdeepak/Stackoverflow" target="_blank">Stackoverflow Java Library</a></span>
-                - <span class="project-tagline"> A java library to access Stackoverflow Data</span>
-            </div><!--//item-->
-            <div class="item">
-                <span class="project-title"><a href="https://github.com/spdeepak/Indian-Postcodes" target="_blank">Indian Postcodes Java Library</a></span>
-                -
-                <span class="project-tagline">Java API Library based on Open Government Data. </span>
-            </div><!--//item-->
-            <div class="item">
-                <span class="project-title"><a href="https://github.com/spdeepak/postcodes-io-java" target="_blank">Postcode IO</a></span>
-                - <span class="project-tagline">UK Postcode Java API serving up Open Data <a href="http://postcodes.io"
-                                                                                             target="_blank">postcodes.io</a></span>
-            </div><!--//item-->
-            <div class="item">
-                <span class="project-title"><a href="https://github.com/spdeepak/textmining" target="_blank">Text Mining Tool</a></span>
-                - <span class="project-tagline">A comprehensive web tool to get all properties of Text such as number of words, Paragraphs, Total number of times a word is repeated, classify words based on size, Parts of speech every word represents. </span>
-            </div><!--//item-->
-        </section><!--//section-->
+<!-- EDUCATION -->
+<section id="education">
+  <div class="reveal">
+    <p class="section-label">Education</p>
+    <h2 class="section-title">Academic Foundation.</h2>
+  </div>
+  <div class="edu-card reveal" style="transition-delay: 0.1s;">
+    <div class="edu-icon">🎓</div>
+    <div>
+      <div class="edu-degree">MSc Computer Science</div>
+      <div class="edu-school">University of Staffordshire · United Kingdom · 2014 — 2017</div>
+    </div>
+  </div>
+  <div class="edu-card reveal" style="transition-delay: 0.2s;">
+    <div class="edu-icon">🎓</div>
+    <div>
+      <div class="edu-degree">BE Computer Science</div>
+      <div class="edu-school">Visvesvaraya Technological University · India · 2008 — 2012</div>
+    </div>
+  </div>
+</section>
 
-        <section class="skills-section section">
-            <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
-            <div class="skillset">
-                <div class="item">
-                    <h3 class="level-title">Java</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="90%">
-                        </div>
-                    </div><!--//level-bar-->
-                </div><!--//item-->
+<div class="divider"></div>
 
-                <div class="item">
-                    <h3 class="level-title">Spring &amp; Hibernate</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="85%">
-                        </div>
-                    </div><!--//level-bar-->
-                </div><!--//item-->
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal" style="text-align: center;">
+    <p class="section-label">Get In Touch</p>
+    <h2 class="section-title">Let's build something together.</h2>
+    <p class="section-desc" style="margin: 0 auto;">Always open to discussing new projects, creative ideas, or opportunities to be part of something great.</p>
+  </div>
+  <div class="contact-grid reveal" style="transition-delay: 0.1s;">
+    <a href="https://www.linkedin.com/in/spdeepak/" target="_blank" class="contact-card">
+      <div class="icon">💼</div>
+      <div class="label">LinkedIn</div>
+      <div class="value">in/spdeepak</div>
+    </a>
+    <a href="https://github.com/spdeepak" target="_blank" class="contact-card">
+      <div class="icon">🐙</div>
+      <div class="label">GitHub</div>
+      <div class="value">@spdeepak</div>
+    </a>
+    <a href="https://spdeepak.github.io/" target="_blank" class="contact-card">
+      <div class="icon">🌐</div>
+      <div class="label">Portfolio</div>
+      <div class="value">spdeepak.github.io</div>
+    </a>
+  </div>
+</section>
 
-                <div class="item">
-                    <h3 class="level-title">Spring Boot &amp; Spring Data JPA</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="78%">
-                        </div>
-                    </div><!--//level-bar-->
-                </div><!--//item-->
+<footer>
+  <p>Designed & built with precision · © 2026 Deepak S P · <a href="https://twitter.com/iamdeepaksp" target="_blank">@iamdeepaksp</a></p>
+</footer>
 
-                <div class="item">
-                    <h3 class="level-title">REST</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="85%">
-                        </div>
-                    </div><!--//level-bar-->
-                </div><!--//item-->
+<script>
+  // ── Progress ──
+  const progressFill = document.getElementById('progressFill');
+  // ── Nav ──
+  const nav = document.getElementById('nav');
 
-                <div class="item">
-                    <h3 class="level-title">TDD &amp; Junit4</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="98%">
-                        </div>
-                    </div><!--//level-bar-->
-                </div><!--//item-->
+  function onScroll() {
+    const scrollY = window.scrollY;
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    progressFill.style.width = (scrollY / docH * 100) + '%';
+    nav.classList.toggle('compact', scrollY > 60);
+  }
 
-            </div>
-        </section><!--//skills-section-->
+  // ── Reveal ──
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+  reveals.forEach(el => revealObs.observe(el));
 
-    </div><!--//main-body-->
-</div>
+  // ── Scroll listener ──
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => { onScroll(); ticking = false; });
+      ticking = true;
+    }
+  });
 
-<footer class="footer">
-    <div class="text-center">
-        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-        <small class="copyright">I <i class="fa fa-heart"></i> to hear about something new. Drop me an email: <i
-                class="fa fa-envelope"></i><a href="mailto: spdeepak@outlook.com"> spdeepak@outlook.com</a></small>
-    </div><!--//container-->
-</footer><!--//footer-->
-
-<!-- Javascript -->
-<script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-<!-- custom js -->
-<script type="text/javascript" src="assets/js/main.js"></script>
+  onScroll();
+</script>
 </body>
-</html> 
-
+</html>
